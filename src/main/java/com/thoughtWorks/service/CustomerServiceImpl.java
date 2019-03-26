@@ -7,11 +7,13 @@ import java.util.List;
 
 public class CustomerServiceImpl implements CustomerService{
 
-    private CustomerRepository customerRepository;
-
-    public void setCustomerRepository(CustomerRepository customerRepository) {
+    public CustomerServiceImpl(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
+
+    private CustomerRepository customerRepository;
+
+
 
     public List<Customer> findAll() {
         return customerRepository.findAll();
