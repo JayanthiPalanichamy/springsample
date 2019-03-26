@@ -1,5 +1,4 @@
 import com.thoughtWorks.service.CustomerService;
-import com.thoughtWorks.service.CustomerServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
