@@ -10,8 +10,12 @@ import java.util.List;
 @Service("customerService")
 public class CustomerServiceImpl implements CustomerService{
 
-    @Autowired
+    //@Autowired
     public void setCustomerRepository(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
+
+    public CustomerServiceImpl(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
 
